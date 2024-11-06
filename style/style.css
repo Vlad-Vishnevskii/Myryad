@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 :before,
 :after {
@@ -69,6 +70,9 @@ img {
   gap: 10px;
   text-align: center;
 }
+.info_main-title {
+  text-shadow: rgba(0, 0, 0, 0.26) 2px 3px 0;
+}
 .about {
   display: flex;
   flex-direction: column;
@@ -81,7 +85,7 @@ img {
 .accordion_button {
   display: inline-flex;
   margin-bottom: 20px;
-  background: #06afc4;
+  background: linear-gradient(90deg, #00add8 0%, #0eb1a9 100%);
   padding: 10px 20px;
   border-radius: 20px;
 }
@@ -99,6 +103,7 @@ img {
   display: flex;
   gap: 80px;
   margin-top: 40px;
+  align-items: flex-start;
 }
 .products_item {
   display: flex;
@@ -169,7 +174,8 @@ img {
 .map_point {
   display: inline-flex;
   gap: 10px;
-  background: #06afc4;
+  background: linear-gradient(90deg, #00add8 0%, #0eb1a9 100%);
+  text-shadow: rgba(0, 0, 0, 0.26) 2px 3px 0;
   padding: 10px 20px;
   border-radius: 20px;
 }
@@ -194,4 +200,55 @@ img {
 .footer_contacts svg {
   width: 60px;
   height: auto;
+}
+
+.description-container {
+  width: 100%;
+}
+
+.description-text {
+  max-height: 0; /* Скрытое состояние */
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.7s ease-out; /* Плавный переход */
+}
+.description-text p {
+  margin: 5px 0;
+}
+
+.description-text.expanded {
+  max-height: 900px; /* Увеличиваем до нужной высоты при раскрытии */
+  opacity: 1;
+}
+
+.products_hidden-text.expanded {
+  display: none;
+  max-height: 0;
+  opacity: 0;
+  transition: all 0.7s ease-out;
+}
+
+.toggle-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  background: linear-gradient(90deg, #00add8 0%, #0eb1a9 100%);
+  padding: 15px 20px;
+  border-radius: 15px;
+  border: 0;
+  color: #ffffff;
+  font-size: clamp(12px, 1.0065rem + 0.8046vw, 20px);
+  font-weight: bold;
+  transition: all ease-out 0.7s;
+  cursor: pointer;
+}
+.toggle-button img {
+  transition: all ease-out 0.7s;
+  transform: none;
+}
+
+.toggle-button.expanded img {
+  transform: rotate(90deg);
 }/*# sourceMappingURL=style.css.map */

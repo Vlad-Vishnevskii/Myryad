@@ -1023,3 +1023,21 @@ function init() {
   };
   objectManager.add(points);
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+  const toggleButtons = document.querySelectorAll('.toggle-button');
+
+  toggleButtons.forEach((button) => {
+    button.addEventListener('click', function () {
+      const textSection = button.parentNode.querySelector('.description-text');
+      const buttonText = button.querySelector('.toggle-button_text');
+      const container = button.parentNode.parentNode.querySelector(
+        '.products_hidden-text'
+      );
+      if (container) container.classList.toggle('expanded');
+      const isExpanded = textSection.classList.toggle('expanded');
+      button.classList.toggle('expanded');
+      buttonText.textContent = isExpanded ? 'Свернуть' : 'Подробнее';
+    });
+  });
+});
