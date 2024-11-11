@@ -76,6 +76,33 @@
               </li>
             </ul>
           </nav>
+          <div class="burger-menu">
+            <button class="burger-btn" id="burgerBtn">
+              <span class="icon-open">☰</span>
+              <span class="icon-close">✖</span>
+            </button>
+            <div class="menu-overlay" id="menuOverlay">
+              <nav class="menu">
+                <ul>
+                  <li>
+                    <a class="menu_link" href="#about">О бренде</a>
+                  </li>
+                  <li>
+                    <a class="menu_link" href="#products">Наши продукты</a>
+                  </li>
+                  <li>
+                    <a class="menu_link" href="#reviews">Обзоры</a>
+                  </li>
+                  <li>
+                    <a class="menu_link" href="#buy">Где купить</a>
+                  </li>
+                  <li>
+                    <a class="menu_link" href="#contacts">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
         </div>
 
         <article class="info">
@@ -179,7 +206,7 @@
             духе минимализма – как дань традициям и отсылка к истокам.
           </p>
 
-          <div class="products_list">
+          <div class="products_list products_list--strech">
             <div class="products_item">
               <img class="products_img" src="./img/Z310-BLK.png" alt="Z310" />
 
@@ -482,7 +509,7 @@
         </div>
 
         <div class="footer_contacts">
-          <a itemprop="phone" href="tel:">
+          <a class="footer_phone" itemprop="phone" href="tel:">
             <svg
               width="55"
               height="55"
@@ -492,11 +519,15 @@
             >
               <path
                 d="M11.14 23.8201C15.52 32.4301 22.5701 39.4801 31.1801 43.8601L37.87 37.1702C38.72 36.3202 39.91 36.0804 40.97 36.4104C44.38 37.5404 48.03 38.1501 51.83 38.1501C52.64 38.1501 53.41 38.4703 53.98 39.0403C54.55 39.6103 54.88 40.3802 54.88 41.1902V51.8303C54.88 52.6403 54.55 53.4102 53.98 53.9802C53.41 54.5502 52.64 54.8801 51.83 54.8801C38.12 54.8801 24.97 49.4302 15.27 39.7302C5.57002 30.0302 0.119995 16.8802 0.119995 3.17017C0.119995 2.36017 0.45002 1.59026 1.02002 1.02026C1.59002 0.450264 2.36004 0.120361 3.17004 0.120361H13.8101C14.6201 0.120361 15.39 0.450264 15.96 1.02026C16.53 1.59026 16.85 2.36017 16.85 3.17017C16.85 6.97017 17.46 10.62 18.59 14.03C18.92 15.09 18.68 16.2801 17.83 17.1301L11.14 23.8201Z"
-                fill="white"
+                fill="currentColor"
               />
             </svg>
           </a>
-          <a itemprop="email" href="mailto:info@tl-sound.ru">
+          <a
+            class="footer_email"
+            itemprop="email"
+            href="mailto:info@tl-sound.ru"
+          >
             <svg
               width="71"
               height="57"
@@ -506,7 +537,7 @@
             >
               <path
                 d="M63.17 0.830322H7.82996C4.02996 0.830322 0.949951 3.95024 0.949951 7.75024L0.920044 49.2502C0.920044 53.0502 4.02996 56.1702 7.82996 56.1702H63.17C66.97 56.1702 70.08 53.0502 70.08 49.2502V7.75024C70.08 3.95024 66.97 0.830322 63.17 0.830322ZM63.17 14.6702L35.5 31.9602L7.82996 14.6702V7.75024L35.5 25.0403L63.17 7.75024V14.6702Z"
-                fill="white"
+                fill="currentColor"
               />
             </svg>
           </a>

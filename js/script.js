@@ -1048,12 +1048,14 @@ document.addEventListener('DOMContentLoaded', function () {
       const textSection =
         button.parentNode.parentNode.querySelector('.description-text');
       const buttonText = button.querySelector('.toggle-button-product_text');
+      const list = document.querySelector('.products_list');
       const container = button.parentNode.parentNode.querySelector(
         '.products_hidden-text'
       );
       if (container) container.classList.toggle('expanded');
       const isExpanded = textSection.classList.toggle('expanded');
       button.classList.toggle('expanded');
+      list.classList.toggle('products_list--strech');
       buttonText.textContent = isExpanded ? 'Свернуть' : 'Подробнее';
     });
   });
@@ -1072,5 +1074,20 @@ document.addEventListener('DOMContentLoaded', function () {
         });
       }
     });
+  });
+
+  const burgerBtn = document.getElementById('burgerBtn');
+  const menuOverlay = document.getElementById('menuOverlay');
+
+  burgerBtn.addEventListener('click', () => {
+    menuOverlay.classList.toggle('active');
+    burgerBtn.classList.toggle('active');
+  });
+
+  document.addEventListener('click', (event) => {
+    if (event.target.closest('.menu_link')) {
+      menuOverlay.classList.remove('active');
+      burgerBtn.classList.remove('active');
+    }
   });
 });
