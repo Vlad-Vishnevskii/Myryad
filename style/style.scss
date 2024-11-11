@@ -490,6 +490,10 @@ img {
       flex-direction: column;
       width: 100%;
     }
+
+    &--strech {
+      align-items: stretch;
+    }
   }
 
   &_item {
@@ -502,7 +506,7 @@ img {
     padding-top: 60px;
     border: 2px solid #ffffff;
     border-radius: 60px;
-    min-height: 640px;
+    // min-height: 640px;
 
     @include vp-1439 {
       border-radius: 30px;
@@ -510,18 +514,14 @@ img {
       padding-bottom: 15px;
       padding-left: 15px;
       padding-right: 15px;
-      min-height: 550px;
+      // min-height: 550px;
     }
 
     @include vp-959 {
       padding-top: 30px;
       width: 100%;
       border-width: 1px;
-      min-height: initial;
-    }
-
-    &--strech {
-      align-self: stretch;
+      // min-height: initial;
     }
   }
 
