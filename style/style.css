@@ -468,7 +468,7 @@ img {
   padding-top: 60px;
   border: 2px solid #ffffff;
   border-radius: 60px;
-  min-height: 667px;
+  min-height: 500px;
 }
 @media (max-width: 1439px) {
   .products_item {
@@ -477,15 +477,19 @@ img {
     padding-bottom: 15px;
     padding-left: 15px;
     padding-right: 15px;
-    min-height: 680px;
+    min-height: 550px;
   }
 }
 @media (max-width: 953px) {
   .products_item {
+    padding-top: 30px;
     width: 100%;
     border-width: 1px;
     min-height: initial;
   }
+}
+.products_item--strech {
+  align-self: stretch;
 }
 .products_img {
   width: 90%;
