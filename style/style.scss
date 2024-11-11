@@ -178,7 +178,7 @@ img {
   }
 
   a {
-    font-size: clamp(21px, 1.0065rem + 0.8046vw, 27px);
+    font-size: 27px;
     transition: $trans-600;
     border-bottom: 1.5px solid transparent;
     padding-bottom: 2px;
@@ -189,7 +189,7 @@ img {
     }
 
     @include vp-1439 {
-      font-size: clamp(18px, 1.0065rem + 0.8046vw, 27px);
+      font-size: 18px;
     }
   }
 }
@@ -290,12 +290,12 @@ img {
   }
 
   &_main-title {
-    font-size: clamp(64px, 1.0065rem + 0.8046vw, 27px);
+    font-size: 64px;
     text-shadow: rgba(0, 0, 0, 0.26) 2px 3px 0;
     line-height: 1;
 
     @include vp-1439 {
-      font-size: clamp(50px, 1.0065rem + 0.8046vw, 27px);
+      font-size: 50px;
     }
 
     @include vp-959 {
@@ -304,11 +304,11 @@ img {
   }
 
   &_description {
-    font-size: clamp(45px, 1.0065rem + 0.8046vw, 27px);
+    font-size: 45px;
     letter-spacing: 1.5;
 
     @include vp-1439 {
-      font-size: clamp(35px, 1.0065rem + 0.8046vw, 27px);
+      font-size: 35px;
     }
 
     @include vp-959 {
@@ -342,12 +342,12 @@ img {
   }
 
   &_title {
-    font-size: clamp(64px, 1.0065rem + 0.8046vw, 27px);
+    font-size: 64px;
     margin: 0;
     font-weight: 500;
 
     @include vp-1439 {
-      font-size: clamp(50px, 1.0065rem + 0.8046vw, 27px);
+      font-size: 50px;
     }
 
     @include vp-959 {
@@ -356,10 +356,10 @@ img {
   }
 
   &_text {
-    font-size: clamp(30px, 1.0065rem + 0.8046vw, 27px);
+    font-size: 30px;
 
     @include vp-1439 {
-      font-size: clamp(25px, 1.0065rem + 0.8046vw, 27px);
+      font-size: 25px;
     }
 
     @include vp-959 {
@@ -404,10 +404,10 @@ img {
   .toggle-button_text {
     font-family: 'Jura', sans-serif;
     font-weight: 500;
-    font-size: clamp(37px, 1.0065rem + 0.8046vw, 27px);
+    font-size: 37px;
 
     @include vp-1439 {
-      font-size: clamp(25px, 1.0065rem + 0.8046vw, 27px);
+      font-size: 25px;
     }
 
     @include vp-959 {
@@ -438,7 +438,7 @@ img {
   }
 
   &_title {
-    font-size: clamp(64px, 1.0065rem + 0.8046vw, 27px);
+    font-size: 64px;
     margin: 0;
 
     @include vp-959 {
@@ -447,10 +447,10 @@ img {
   }
 
   &_description {
-    font-size: clamp(30px, 1.0065rem + 0.8046vw, 27px);
+    font-size: 30px;
 
     @include vp-1439 {
-      font-size: clamp(25px, 1.0065rem + 0.8046vw, 27px);
+      font-size: 25px;
     }
 
     @include vp-959 {
@@ -459,11 +459,11 @@ img {
 
     &--bold {
       margin-top: 20px;
-      font-size: clamp(30px, 1.0065rem + 0.8046vw, 27px);
+      font-size: 30px;
       font-weight: 900;
 
       @include vp-1439 {
-        font-size: clamp(25px, 1.0065rem + 0.8046vw, 27px);
+        font-size: 25px;
       }
 
       @include vp-959 {
@@ -490,10 +490,6 @@ img {
       flex-direction: column;
       width: 100%;
     }
-
-    &--strech {
-      align-items: stretch;
-    }
   }
 
   &_item {
@@ -506,7 +502,7 @@ img {
     padding-top: 60px;
     border: 2px solid #ffffff;
     border-radius: 60px;
-    min-height: 500px;
+    min-height: 640px;
 
     @include vp-1439 {
       border-radius: 30px;
@@ -553,13 +549,13 @@ img {
     gap: 30px;
     padding: 0 40px;
     width: 100%;
+    align-items: center;
 
     @include vp-1439 {
       padding: 0;
     }
 
     @include vp-959 {
-      align-items: center;
       justify-content: space-around;
       gap: 10px;
     }
@@ -567,14 +563,14 @@ img {
     h3 {
       font-weight: 400;
       font-family: Arial, Helvetica, sans-serif;
-      font-size: clamp(110px, 1.0065rem + 0.8046vw, 27px);
+      font-size: 110px;
 
       @include vp-1919 {
-        font-size: clamp(80px, 1.0065rem + 0.8046vw, 27px);
+        font-size: 60px;
       }
 
       @include vp-1439 {
-        font-size: clamp(70px, 1.0065rem + 0.8046vw, 27px);
+        font-size: 50px;
       }
 
       @include vp-959 {
@@ -585,10 +581,10 @@ img {
   }
 
   &_text {
-    font-size: clamp(30px, 1.0065rem + 0.8046vw, 27px);
+    font-size: 30px;
 
     @include vp-1439 {
-      font-size: clamp(25px, 1.0065rem + 0.8046vw, 27px);
+      font-size: 25px;
     }
 
     @include vp-959 {
@@ -600,11 +596,11 @@ img {
     span {
       display: block;
       margin: 20px 0;
-      font-size: clamp(40px, 1.0065rem + 0.8046vw, 27px);
+      font-size: 40px;
       font-weight: bold;
 
       @include vp-1439 {
-        font-size: clamp(30px, 1.0065rem + 0.8046vw, 27px);
+        font-size: 30px;
       }
 
       @include vp-959 {
@@ -627,11 +623,11 @@ img {
   .divTableCell {
     border-top: 0;
     width: 100%;
-    font-size: clamp(30px, 1.0065rem + 0.8046vw, 27px);
+    font-size: 30px;
     width: 50%;
 
     @include vp-1439 {
-      font-size: clamp(20px, 1.0065rem + 0.8046vw, 27px);
+      font-size: 20px;
     }
 
     @include vp-959 {
@@ -665,14 +661,13 @@ img {
     min-width: 361px;
 
     @include vp-1919 {
-      padding: 15px 20px;
+      padding: 15px 25px;
+      min-width: initial;
     }
 
     @include vp-1439 {
-      font-size: clamp(18px, 1.0065rem + 0.8046vw, 27px);
-      min-width: initial;
+      font-size: 18px;
       padding: 10px 30px;
-      margin-top: -20px;
     }
 
     @include vp-959 {
@@ -698,7 +693,7 @@ img {
   .toggle-button-product_text {
     font-family: 'Jura', sans-serif;
     font-weight: 500;
-    font-size: clamp(37px, 1.0065rem + 0.8046vw, 27px);
+    font-size: 37px;
 
     @include vp-959 {
       font-size: 16px;
@@ -722,14 +717,14 @@ img {
   }
 
   &_text {
-    font-size: clamp(64px, 1.0065rem + 0.8046vw, 27px);
+    font-size: 64px;
     margin: 0;
     padding: 0;
     white-space: nowrap;
     font-weight: 500;
 
     @include vp-1439 {
-      font-size: clamp(50px, 1.0065rem + 0.8046vw, 27px);
+      font-size: 50px;
     }
 
     @include vp-959 {
@@ -818,13 +813,13 @@ img {
     padding-left: 50px;
     padding-right: 30px;
     border-radius: 30px;
-    font-size: clamp(40px, 1.0065rem + 0.8046vw, 27px);
+    font-size: 40px;
     letter-spacing: 1px;
 
     @include vp-1439 {
       padding-left: 30px;
       gap: 10px;
-      font-size: clamp(30px, 1.0065rem + 0.8046vw, 27px);
+      font-size: 30px;
     }
 
     @include vp-959 {
@@ -892,11 +887,11 @@ img {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    font-size: clamp(35px, 1.0065rem + 0.8046vw, 27px);
+    font-size: 35px;
     text-align: center;
 
     @include vp-1439 {
-      font-size: clamp(25px, 1.0065rem + 0.8046vw, 27px);
+      font-size: 25px;
     }
 
     @include vp-959 {
@@ -1029,7 +1024,7 @@ img {
   border-radius: 15px;
   border: 0;
   color: #ffffff;
-  font-size: clamp(12px, 1.0065rem + 0.8046vw, 20px);
+  font-size: 12px;
   font-weight: bold;
   transition: all ease-out 0.7s;
   transition: transform ease 0.5s;
