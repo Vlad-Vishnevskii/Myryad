@@ -251,7 +251,7 @@ img {
 }
 .info_main-title {
   font-size: 64px;
-  text-shadow: rgba(0, 0, 0, 0.26) 2px 3px 0;
+  text-shadow: rgba(0, 0, 0, 0.7) 2px 3px 0;
   line-height: 1;
 }
 @media (max-width: 1439px) {
@@ -262,11 +262,13 @@ img {
 @media (max-width: 953px) {
   .info_main-title {
     font-size: 16px;
+    text-shadow: rgb(0, 0, 0) 2px 1px 0;
   }
 }
 .info_description {
   font-size: 45px;
   letter-spacing: 1.5;
+  text-shadow: rgba(0, 0, 0, 0.7) 2px 3px 0;
 }
 @media (max-width: 1439px) {
   .info_description {
@@ -278,6 +280,7 @@ img {
     font-size: 14px;
     line-height: 1.2;
     margin-top: 5px;
+    text-shadow: rgb(0, 0, 0) 2px 1px 0;
   }
 }
 

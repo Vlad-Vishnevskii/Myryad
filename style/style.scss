@@ -295,7 +295,7 @@ img {
 
   &_main-title {
     font-size: 64px;
-    text-shadow: rgba(0, 0, 0, 0.26) 2px 3px 0;
+    text-shadow: rgba(0, 0, 0, 0.7) 2px 3px 0;
     line-height: 1;
 
     @include vp-1439 {
@@ -304,12 +304,14 @@ img {
 
     @include vp-959 {
       font-size: 16px;
+      text-shadow: rgba(0, 0, 0, 1) 2px 1px 0;
     }
   }
 
   &_description {
     font-size: 45px;
     letter-spacing: 1.5;
+    text-shadow: rgba(0, 0, 0, 0.7) 2px 3px 0;
 
     @include vp-1439 {
       font-size: 35px;
@@ -319,6 +321,7 @@ img {
       font-size: 14px;
       line-height: 1.2;
       margin-top: 5px;
+      text-shadow: rgba(0, 0, 0, 1) 2px 1px 0;
     }
   }
 }
