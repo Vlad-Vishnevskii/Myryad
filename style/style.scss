@@ -304,7 +304,7 @@ img {
 
     @include vp-959 {
       font-size: 16px;
-      text-shadow: rgba(0, 0, 0, 1) 2px 1px 0;
+      text-shadow: rgba(0, 0, 0, 1) 1.5px 1px 0px;
     }
   }
 
@@ -321,7 +321,7 @@ img {
       font-size: 14px;
       line-height: 1.2;
       margin-top: 5px;
-      text-shadow: rgba(0, 0, 0, 1) 2px 1px 0;
+      text-shadow: rgba(0, 0, 0, 1) 1.5px 1px 0px;
     }
   }
 }
